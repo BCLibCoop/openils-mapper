@@ -1,11 +1,9 @@
 require 'rake'
 begin
-  $: << File.join(File.dirname(__FILE__),'lib')
-  require 'openils/mapper'
   Gem::Specification.new do |s|
     s.homepage = 'http://github.com/berick/openils-mapper'
     s.name = "openils-mapper"
-    s.version = OpenILS::Mapper::VERSION
+    s.version = '0.9.9'
     s.summary = "EDIFACT<->JSON middleware for the Evergreen Open Source ILS"
     s.email = "berickxx@gmail.com"
     s.description = "Middleware layer to provide translation between high-level JSON and raw EDIFACT messages"
